@@ -1,0 +1,265 @@
+ 
+//         /* Brand Animation Keyframes */
+//         @keyframes slide-up {
+//           0% { transform: translateY(30px); opacity: 0; }
+//           100% { transform: translateY(0); opacity: 1; }
+//         }
+        
+//         @keyframes brand-shine {
+//           0% { transform: translateX(-100%) skewX(-12deg); opacity: 0; }
+//           50% { opacity: 0.8; }
+//           100% { transform: translateX(200%) skewX(-12deg); opacity: 0; }
+//         }
+        
+
+        
+//         @keyframes float-particle-1 {
+//           0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.6; }
+//           50% { transform: translateY(-10px) translateX(5px); opacity: 1; }
+//         }
+        
+//         @keyframes float-particle-2 {
+//           0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.4; }
+//           50% { transform: translateY(-15px) translateX(-8px) scale(1.2); opacity: 0.8; }
+//         }
+        
+//         @keyframes float-particle-3 {
+//           0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.7; }
+//           33% { transform: translateY(-8px) translateX(4px); opacity: 1; }
+//           66% { transform: translateY(-2px) translateX(-6px); opacity: 0.5; }
+//         }
+        
+//         /* Brand Animation Classes */
+//         .animate-slide-up {
+//           animation: slide-up 1s ease-out;
+//         }
+        
+//         .animate-brand-shine {
+//           animation: brand-shine 6s ease-in-out infinite;
+//         }
+        
+//         .animate-float-particle-1 {
+//           animation: float-particle-1 4s ease-in-out infinite;
+//         }
+        
+//         .animate-float-particle-2 {
+//           animation: float-particle-2 5s ease-in-out infinite 0.5s;
+//         }
+        
+//         .animate-float-particle-3 {
+//           animation: float-particle-3 6s ease-in-out infinite 1s;
+//         }
+        
+//         /* Brand name text shadows */
+//         .brand-container h1 {
+//           text-shadow: 
+//             0 2px 4px rgba(0,0,0,0.8),
+//             0 4px 8px rgba(0,0,0,0.6);
+//         }
+        
+//         /* Enhanced responsive optimizations */
+//         @media (max-width: 475px) {
+//           .brand-container {
+//             bottom: 1rem;
+//             left: 1rem;
+//           }
+          
+//           .brand-container h1 {
+//             font-size: 1.25rem !important;
+//             line-height: 1.2;
+//           }
+          
+//           .brand-container h1 span:last-child {
+//             font-size: 0.75rem !important;
+//             line-height: 1.3;
+//           }
+//         }
+        
+//         /* Extra small devices */
+//         @media (max-width: 375px) {
+//           .brand-container h1 {
+//             font-size: 1rem !important;
+//           }
+          
+//           .brand-container h1 span:last-child {
+//             font-size: 0.7rem !important;
+//           }
+//         }
+        
+//         /* Performance optimizations */
+//         @media (prefers-reduced-motion: reduce) {
+//           .animate-slide-up,
+//           .animate-brand-shine,
+//           .animate-float-particle-1,
+//           .animate-float-particle-2,
+//           .animate-float-particle-3 {
+//             animation: none;
+//           }
+//         }
+
+//         .cursive-main-title {
+//   font-family: 'Great Vibes', 'Brush Script MT', cursive;
+//   font-size: clamp(3rem, 6vw, 6rem); /* Bigger, responsive size */
+//   font-style: italic;
+//   font-weight: 500;
+//   letter-spacing: 1px;
+// }
+
+// .shine-gradient {
+//   background: linear-gradient(to right, #ffffff 70%, #e6e6e6 85%, #1a1a1a 100%);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   background-clip: text;
+//   text-fill-color: transparent;
+// }
+
+/* Z-Index Fix for Navigation Overlap */
+.hero-video-container {
+  z-index: 1; /* Lower than nav */
+  position: relative;
+  isolation: isolate; /* Create new stacking context */
+}
+
+.video-wrapper {
+  z-index: 1;
+}
+
+.hero-video {
+  z-index: 1;
+}
+
+.video-overlay {
+  z-index: 2;
+}
+
+.brand-content {
+  z-index: 10; /* Higher than video but lower than nav */
+}
+
+/* Alternative: Add padding-top to account for fixed nav */
+@media (max-width: 768px) {
+  .hero-video-container {
+    /* Add top padding equal to your navbar height */
+    padding-top: 60px; /* Adjust this value to match your navbar height */
+    height: calc(50vh + 60px); /* Compensate for padding */
+  }
+  
+  /* If you prefer margin instead of padding */
+  .hero-video-container.with-margin {
+    margin-top: 60px; /* Adjust this value to match your navbar height */
+    padding-top: 0;
+    height: 50vh;
+  }
+}
+
+/* Brand Animation Keyframes */
+@keyframes slide-up {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes brand-shine {
+  0% { transform: translateX(-100%) skewX(-12deg); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateX(200%) skewX(-12deg); opacity: 0; }
+}
+
+@keyframes float-particle-1 {
+  0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.6; }
+  50% { transform: translateY(-10px) translateX(5px); opacity: 1; }
+}
+
+@keyframes float-particle-2 {
+  0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.4; }
+  50% { transform: translateY(-15px) translateX(-8px) scale(1.2); opacity: 0.8; }
+}
+
+@keyframes float-particle-3 {
+  0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.7; }
+  33% { transform: translateY(-8px) translateX(4px); opacity: 1; }
+  66% { transform: translateY(-2px) translateX(-6px); opacity: 0.5; }
+}
+
+/* Brand Animation Classes */
+.animate-slide-up {
+  animation: slide-up 1s ease-out;
+}
+
+.animate-brand-shine {
+  animation: brand-shine 6s ease-in-out infinite;
+}
+
+.animate-float-particle-1 {
+  animation: float-particle-1 4s ease-in-out infinite;
+}
+
+.animate-float-particle-2 {
+  animation: float-particle-2 5s ease-in-out infinite 0.5s;
+}
+
+.animate-float-particle-3 {
+  animation: float-particle-3 6s ease-in-out infinite 1s;
+}
+
+/* Brand name text shadows */
+.brand-container h1 {
+  text-shadow:
+    0 2px 4px rgba(0,0,0,0.8),
+    0 4px 8px rgba(0,0,0,0.6);
+}
+
+/* Enhanced responsive optimizations */
+@media (max-width: 475px) {
+  .brand-container {
+    bottom: 1rem;
+    left: 1rem;
+  }
+    
+  .brand-container h1 {
+    font-size: 1.25rem !important;
+    line-height: 1.2;
+  }
+    
+  .brand-container h1 span:last-child {
+    font-size: 0.75rem !important;
+    line-height: 1.3;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+  .brand-container h1 {
+    font-size: 1rem !important;
+  }
+    
+  .brand-container h1 span:last-child {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-up,
+  .animate-brand-shine,
+  .animate-float-particle-1,
+  .animate-float-particle-2,
+  .animate-float-particle-3 {
+    animation: none;
+  }
+}
+
+.cursive-main-title {
+  font-family: 'Great Vibes', 'Brush Script MT', cursive;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.shine-gradient {
+  background: linear-gradient(to right, #ffffff 70%, #e6e6e6 85%, #1a1a1a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

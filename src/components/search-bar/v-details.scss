@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+          
+          .luxury-font {
+            font-family: 'Inter', sans-serif;
+          }
+          
+          .glass-morphism {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+          }
+          
+          .luxury-shadow {
+            box-shadow: 
+              0 10px 40px rgba(0, 0, 0, 0.1),
+              0 4px 15px rgba(0, 0, 0, 0.05),
+              inset 0 1px 0 rgba(255, 255, 255, 0.8);
+          }
+
+
+           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .luxury-font {
+          font-family: 'Inter', sans-serif;
+        }
+        
+        .glass-morphism {
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        
+        .luxury-shadow {
+          box-shadow: 
+            0 20px 60px rgba(0, 0, 0, 0.08),
+            0 8px 25px rgba(0, 0, 0, 0.04),
+            inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+        
+        .service-card-shadow {
+          box-shadow: 
+            0 4px 15px rgba(0, 0, 0, 0.04),
+            0 2px 8px rgba(0, 0, 0, 0.02),
+            inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+        
+        .service-card-shadow:hover {
+          box-shadow: 
+            0 8px 25px rgba(0, 0, 0, 0.08),
+            0 4px 15px rgba(0, 0, 0, 0.04),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
+        }
+        
+        .elegant-shimmer {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .elegant-shimmer::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.2),
+            transparent
+          );
+          transition: left 0.8s ease;
+        }
+        
+        .elegant-shimmer:hover::before {
+          left: 100%;
+        }
+        
+        .premium-gradient {
+          background: linear-gradient(135deg, 
+            #000000 0%,
+            #1f2937 25%,
+            #374151 50%,
+            #1f2937 75%,
+            #000000 100%
+          );
+        }
+        
+        .luxury-border {
+          border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        
+        .elegant-hover {
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .elegant-hover:hover {
+          transform: translateY(-2px);
+        }
